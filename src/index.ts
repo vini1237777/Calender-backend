@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
-    const port= process.env.port||3300
+    const port = process.env.PORT || 3300;
 
     app.use(userRoutes);
   

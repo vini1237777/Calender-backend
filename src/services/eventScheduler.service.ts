@@ -1,18 +1,14 @@
-import eventSchedulerModel from "../models/eventScheduler.model";
+import { EventSchedulerDao } from "../dao/eventScheduler.dao";
 
 export default class EventSchedulerService {
   static async create(payload: any) {
-    return eventSchedulerModel.create(payload);
+    return EventSchedulerDao.create(payload);
   }
 
   static async get() {
-    return eventSchedulerModel.find({});
+    return EventSchedulerDao.get();
   }
   static async update(id:any,payload:any) {
-    return eventSchedulerModel.findByIdAndUpdate(
-      { _id: id },
-      payload,
-      { new: true }
-    );
+    return EventSchedulerDao.update(id, payload);
   }
 }

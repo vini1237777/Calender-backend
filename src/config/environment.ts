@@ -12,5 +12,6 @@ export const CONFIG = {
     secret: "SDKFJ9#R3IO90U3@#9DSFIN",
     options: {
       expiresIn: "1d", 
-    },}
+    },},
+  COOKIE_KEY: "thisappisawesomevgfhjfg"
 };

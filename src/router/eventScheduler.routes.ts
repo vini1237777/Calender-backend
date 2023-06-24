@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/create",EventSchedulerController.create);
 router.get("/get", EventSchedulerController.get);
-router.get("/update/:id", EventSchedulerController.update);
+router.put("/update/:id", EventSchedulerController.update);
 
 
 module.exports = router;
